@@ -45,8 +45,9 @@ $ gitbook build ./ --log=debug --debug
 ```
 $ gitbook serve
 ```
+
 你在你的图书项目的目录中多了一个名为
-_book的文件目录，而这个目录中的文件，即是生成的静态
+`_book`的文件目录，而这个目录中的文件，即是生成的静态
 网站内容。
 使用build参数生成到指定目录
 与直接预览生成的静态网站文件不一样的是，使用这个命令，
@@ -72,6 +73,17 @@ $ gitbook epub ./ ./mybook.epub
 $ gitbook mobi ./ ./mybook.mobi
 ```
 
+### 添加插件
+
+```
+"plugins": [
+    "splitter"
+]
+```
+添加新插件之后需要运行 gitbook install 来安装新的插件
+
+https://www.imooc.com/article/22889
+
 ### 插件
 1. 插件名称：toggle-chapters
 2. 效果：默认只在目录导航中显示章的标题，而不会显示小节的标题，点击每一章或者每一节会显示当前章或节的子目录，如果有的话，但是同时会收起其它之前展开的章节。
@@ -79,6 +91,58 @@ $ gitbook mobi ./ ./mybook.mobi
 ```
 $ npm install gitbook-plugin-toggle-chapters -g (此时gitbook的根目录下的node_modules文件夹中已经有了该插件了)
 ```
+
+### 自带的几个插件
+
+```
+"plugins": [
+  "-search",
+  "toggle-chapters",
+  "-highlight",
+  "-sharing",
+  "-font-settings",
+  "-livereload"
+]
+减号代表去掉
+```
+## 插件安装详细教程
+
+https://plugins.gitbook.com/plugin/theme-comscore
+
+http://www.chengweiyang.cn/gitbook/github-pages/README.html
+
+http://gitbook.zhangjikai.com/bookjson.html
+
+https://www.kancloud.cn/xiaoyulive/gitbook/506143
+
+
+同类
+
+http://www.lulustyle.net/
+
+
+#### 添加插件的方式：在GitBook项目的根目录下创建一个book.json文件，在其中输入如下内容：
+```
+{
+    "plugins": [
+        "插件名称1",
+        "插件名称2",
+        ...
+        "最后一个插件的名称"
+    ]
+}
+```
+
+常用插件
+
+```
+目录列表折叠：collapsible-menu、toggle-chapters
+返回顶部：back-to-top-button
+更改标题色彩：theme-comscore
+自由调节侧边栏宽度：splitter
+```
+
+添加插件的方式：在GitBook项目的根目录下创建一个book.json文件，在其中输入如下内容：
 插件参考：http://gitbook.zhangjikai.com/plugins.html#ace-plugin
 ## gitbook 常用的命令：
 ```

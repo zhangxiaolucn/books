@@ -17,23 +17,29 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook-plugin-toggle-chapters/toggle.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
                 
             
                 
                 <link rel="stylesheet" href="gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="gitbook-plugin-theme-comscore/test.css">
+                
+            
         
 
     
 
-    
-        
     
         
     
@@ -70,10 +76,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -323,9 +325,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="5.2" data-path="../soft/atom.html">
+        <li class="chapter " data-level="5.1.1" data-path="../soft/atom.html">
             
                 <a href="../soft/atom.html">
             
@@ -335,6 +338,11 @@
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -378,9 +386,6 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <h3 id="gitbook">GitBook</h3>
@@ -412,7 +417,7 @@
 <p>&#x4F7F;&#x7528;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x4F1A;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; web &#x670D;&#x52A1;, &#x901A;&#x8FC7; <a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a> &#x53EF;&#x4EE5;&#x9884;&#x89C8;&#x4E66;&#x7C4D;</p>
 <pre><code>$ gitbook serve
 </code></pre><p>&#x4F60;&#x5728;&#x4F60;&#x7684;&#x56FE;&#x4E66;&#x9879;&#x76EE;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;
-_book&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x662F;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;
+<code>_book</code>&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x662F;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;
 &#x7F51;&#x7AD9;&#x5185;&#x5BB9;&#x3002;
 &#x4F7F;&#x7528;build&#x53C2;&#x6570;&#x751F;&#x6210;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;
 &#x4E0E;&#x76F4;&#x63A5;&#x9884;&#x89C8;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x6587;&#x4EF6;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x662F;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;
@@ -429,12 +434,53 @@ $ gitbook build --output=/tmp/gitbook
 $ gitbook epub ./ ./mybook.epub
 
 $ gitbook mobi ./ ./mybook.mobi
-</code></pre><h3 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h3>
+</code></pre><h3 id="&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;">&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;</h3>
+<pre><code>&quot;plugins&quot;: [
+    &quot;splitter&quot;
+]
+</code></pre><p>&#x6DFB;&#x52A0;&#x65B0;&#x63D2;&#x4EF6;&#x4E4B;&#x540E;&#x9700;&#x8981;&#x8FD0;&#x884C; gitbook install &#x6765;&#x5B89;&#x88C5;&#x65B0;&#x7684;&#x63D2;&#x4EF6;</p>
+<p><a href="https://www.imooc.com/article/22889" target="_blank">https://www.imooc.com/article/22889</a></p>
+<h3 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h3>
 <ol>
 <li>&#x63D2;&#x4EF6;&#x540D;&#x79F0;&#xFF1A;toggle-chapters</li>
 <li>&#x6548;&#x679C;&#xFF1A;&#x9ED8;&#x8BA4;&#x53EA;&#x5728;&#x76EE;&#x5F55;&#x5BFC;&#x822A;&#x4E2D;&#x663E;&#x793A;&#x7AE0;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x5C0F;&#x8282;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x70B9;&#x51FB;&#x6BCF;&#x4E00;&#x7AE0;&#x6216;&#x8005;&#x6BCF;&#x4E00;&#x8282;&#x4F1A;&#x663E;&#x793A;&#x5F53;&#x524D;&#x7AE0;&#x6216;&#x8282;&#x7684;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF0C;&#x4F46;&#x662F;&#x540C;&#x65F6;&#x4F1A;&#x6536;&#x8D77;&#x5176;&#x5B83;&#x4E4B;&#x524D;&#x5C55;&#x5F00;&#x7684;&#x7AE0;&#x8282;&#x3002;</li>
 <li>&#x63D2;&#x4EF6;&#x5B89;&#x88C5;<pre><code>$ npm install gitbook-plugin-toggle-chapters -g (&#x6B64;&#x65F6;gitbook&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;node_modules&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x8BE5;&#x63D2;&#x4EF6;&#x4E86;)
-</code></pre>&#x63D2;&#x4EF6;&#x53C2;&#x8003;&#xFF1A;<a href="http://gitbook.zhangjikai.com/plugins.html#ace-plugin" target="_blank">http://gitbook.zhangjikai.com/plugins.html#ace-plugin</a><h2 id="gitbook-&#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF1A;">gitbook &#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</h2>
+</code></pre></li>
+</ol>
+<h3 id="&#x81EA;&#x5E26;&#x7684;&#x51E0;&#x4E2A;&#x63D2;&#x4EF6;">&#x81EA;&#x5E26;&#x7684;&#x51E0;&#x4E2A;&#x63D2;&#x4EF6;</h3>
+<pre><code>&quot;plugins&quot;: [
+  &quot;-search&quot;,
+  &quot;toggle-chapters&quot;,
+  &quot;-highlight&quot;,
+  &quot;-sharing&quot;,
+  &quot;-font-settings&quot;,
+  &quot;-livereload&quot;
+]
+&#x51CF;&#x53F7;&#x4EE3;&#x8868;&#x53BB;&#x6389;
+</code></pre><h2 id="&#x63D2;&#x4EF6;&#x5B89;&#x88C5;&#x8BE6;&#x7EC6;&#x6559;&#x7A0B;">&#x63D2;&#x4EF6;&#x5B89;&#x88C5;&#x8BE6;&#x7EC6;&#x6559;&#x7A0B;</h2>
+<p><a href="https://plugins.gitbook.com/plugin/theme-comscore" target="_blank">https://plugins.gitbook.com/plugin/theme-comscore</a></p>
+<p><a href="http://www.chengweiyang.cn/gitbook/github-pages/README.html" target="_blank">http://www.chengweiyang.cn/gitbook/github-pages/README.html</a></p>
+<p><a href="http://gitbook.zhangjikai.com/bookjson.html" target="_blank">http://gitbook.zhangjikai.com/bookjson.html</a></p>
+<p><a href="https://www.kancloud.cn/xiaoyulive/gitbook/506143" target="_blank">https://www.kancloud.cn/xiaoyulive/gitbook/506143</a></p>
+<p>&#x540C;&#x7C7B;</p>
+<p><a href="http://www.lulustyle.net/" target="_blank">http://www.lulustyle.net/</a></p>
+<h4 id="&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;&#x5728;gitbook&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;bookjson&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;">&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;&#x5728;GitBook&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;book.json&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</h4>
+<pre><code>{
+    &quot;plugins&quot;: [
+        &quot;&#x63D2;&#x4EF6;&#x540D;&#x79F0;1&quot;,
+        &quot;&#x63D2;&#x4EF6;&#x540D;&#x79F0;2&quot;,
+        ...
+        &quot;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x7684;&#x540D;&#x79F0;&quot;
+    ]
+}
+</code></pre><p>&#x5E38;&#x7528;&#x63D2;&#x4EF6;</p>
+<pre><code>&#x76EE;&#x5F55;&#x5217;&#x8868;&#x6298;&#x53E0;&#xFF1A;collapsible-menu&#x3001;toggle-chapters
+&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#xFF1A;back-to-top-button
+&#x66F4;&#x6539;&#x6807;&#x9898;&#x8272;&#x5F69;&#xFF1A;theme-comscore
+&#x81EA;&#x7531;&#x8C03;&#x8282;&#x4FA7;&#x8FB9;&#x680F;&#x5BBD;&#x5EA6;&#xFF1A;splitter
+</code></pre><p>&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;&#x5728;GitBook&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;book.json&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;
+&#x63D2;&#x4EF6;&#x53C2;&#x8003;&#xFF1A;<a href="http://gitbook.zhangjikai.com/plugins.html#ace-plugin" target="_blank">http://gitbook.zhangjikai.com/plugins.html#ace-plugin</a></p>
+<h2 id="gitbook-&#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF1A;">gitbook &#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</h2>
 <pre><code>gitbook init //&#x521D;&#x59CB;&#x5316;&#x76EE;&#x5F55;&#x6587;&#x4EF6;
 gitbook help //&#x5217;&#x51FA;gitbook&#x6240;&#x6709;&#x7684;&#x547D;&#x4EE4;
 gitbook --help //&#x8F93;&#x51FA;gitbook-cli&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;
@@ -448,9 +494,7 @@ gitbook update //&#x66F4;&#x65B0;&#x5230;gitbook&#x7684;&#x6700;&#x65B0;&#x7248;
 gitbook uninstall 2.0.1 //&#x5378;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;gitbook&#x7248;&#x672C;
 gitbook build --log=debug //&#x6307;&#x5B9A;log&#x7684;&#x7EA7;&#x522B;
 gitbook builid --debug //&#x8F93;&#x51FA;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
-</code></pre></li>
-</ol>
-<h2 id="&#x5E38;&#x89C1;&#x9519;&#x8BEF;">&#x5E38;&#x89C1;&#x9519;&#x8BEF;</h2>
+</code></pre><h2 id="&#x5E38;&#x89C1;&#x9519;&#x8BEF;">&#x5E38;&#x89C1;&#x9519;&#x8BEF;</h2>
 <pre><code>Error: ENOENT: no such file or directory, stat &apos;D:\book\_book\gitbook\gitbook-pl
 ugin-fontsettings\fontsettings.js&apos;
 </code></pre><p>&#x628A;.gitbook\versions\3.2.2\lib\output\website\copyPluginAssets.js &#x91CC;&#x9762;112&#x884C;&#x6539;&#x6210;confirm&#xFF1A;false
@@ -458,26 +502,12 @@ ugin-fontsettings\fontsettings.js&apos;
 <h2 id="&#x5176;&#x4ED6;&#x6559;&#x7A0B;">&#x5176;&#x4ED6;&#x6559;&#x7A0B;</h2>
 <p><a href="https://dunwu.gitbooks.io/gitbook-notes/" target="_blank">https://dunwu.gitbooks.io/gitbook-notes/</a></p>
 <p><a href="https://www.imooc.com/article/22889" target="_blank">https://www.imooc.com/article/22889</a></p>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; http://blog.zhangxiaolu.cn 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-11-06 16:51:55
+</span></footer>
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -501,7 +531,7 @@ ugin-fontsettings\fontsettings.js&apos;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GitBook","level":"4.2","depth":1,"next":{"title":"Markdown","level":"4.3","depth":1,"path":"markdown/README.md","ref":"markdown/README.md","articles":[]},"previous":{"title":"Git","level":"4.1","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zhang Xiao Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"张小路的官方博客","language":"zh-hans","links":{"sidebar":{"张小路的官方博客":"http://www.zhangxiaolu.cn","测试":"/python"}},"gitbook":"*","description":"张小路的官方博客","direction":"ltr"},"file":{"path":"gitbook/README.md","mtime":"2018-11-06T01:20:51.351Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T06:11:52.163Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GitBook","level":"4.2","depth":1,"next":{"title":"Markdown","level":"4.3","depth":1,"path":"markdown/README.md","ref":"markdown/README.md","articles":[]},"previous":{"title":"Git","level":"4.1","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","toggle-chapters","theme-comscore","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy http://blog.zhangxiaolu.cn 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"Zhang Xiao Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"张小路的官方博客","language":"zh-hans","links":{"sidebar":{"张小路的官方博客":"http://www.zhangxiaolu.cn","测试":"/python"}},"gitbook":"*","description":"张小路的官方博客","direction":"ltr"},"file":{"path":"gitbook/README.md","mtime":"2018-11-06T08:51:55.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T08:51:59.572Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -511,15 +541,11 @@ ugin-fontsettings\fontsettings.js&apos;
     <script src="theme.js"></script>
     
         
+        <script src="gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
         <script src="gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook-plugin-search/search.js"></script>
         
     
         
@@ -536,6 +562,10 @@ ugin-fontsettings\fontsettings.js&apos;
     
         
         <script src="gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-theme-comscore/test.js"></script>
         
     
 

@@ -4,10 +4,31 @@
     "language": "zh-hans",
     "author" : "Zhang Xiao Lu",
     "direction": "ltr",
+    "plugins": [
+      "-search",
+      "toggle-chapters",
+      "theme-comscore",
+      "tbfed-pagefooter"
+    ],
+    "pluginsConfig": {
+    "tbfed-pagefooter": {
+        "copyright":"Copyright &copy http://blog.zhangxiaolu.cn 2017",
+        "modify_label": "该文件修订时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+    },
 	"links": {
 		"sidebar": {
 		"张小路的官方博客": "http://www.zhangxiaolu.cn",
     "测试": "/python"
-		}
-	}
+                }
+          },
+    "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+    }
+
 }

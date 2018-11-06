@@ -21,4 +21,4 @@
 
 -----
 * [常用软件](soft/README.md)
-* [Atom](soft/atom.md)
+  - [Atom](soft/atom.md)
